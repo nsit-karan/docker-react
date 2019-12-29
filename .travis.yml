@@ -10,6 +10,7 @@ script:
     - docker run -e CI=true nsitkarana/docker-react npm run test
 
 deploy:
+    edge: true
     provider: elasticbeanstalk
     region: "ap-south-1"
     app: "docker"
